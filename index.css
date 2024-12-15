@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ 
+ 
+}
+body{
+   background: white;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+h1{
+  text-align: center;
+  background-color: blueviolet;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+/*-------------Css for Stop Watch Timer-------------------------*/
+.Container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
+  background-color:cyan;
+  width: 40%;
+  border: 1px double black;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  max-height: 100vw;
+  margin: auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in-out;
+  
+}
+.Stop-watch{
+  background-color: rgba(119, 75, 139, 0.9);
+  padding: 50px;
+  width: 100%;
+  margin: auto;
+  border-radius: 20%;
+  height: 100%;
+
+}
+.Timer{
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.btn{
+  width: 100%;
+  gap: 20px;
+}
+#startBtn,#stopBtn,#pauseBtn,#resetBtn{
+  padding: 10px 20px;
+  background-color: rgb(145, 26, 26);
+  color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+.btn:hover{
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.5s;
+
+}
+#resetBtn:hover{
+  background-color: red;
+
+}
+#startBtn:hover{
+  background-color: red;
+
+}
+#stopBtn:hover{
+  background-color: red;
+
+}
+#pauseBtn:hover{
+  background-color: red;
+
+}
+#lapList{
+  background-color: black;
+  color: aqua;
+  border-radius: 10%;
+  padding: 20px;
+}
+li {
+  color: white;
+  background-color: rgb(64, 64, 99);
+  padding: 10px;
+  border-radius: 20%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+p{
+  margin-bottom: 10px;
+  font-size:15px;
+  
+}
+/*-------------Css for Dictionary-------------------------*/
+.Dictionary{
+  width: 50%;
+  margin: auto;
+ height: 400px;
+ 
+  border-radius: 10px;
+  align-items: center;
+  color: black;
+  background-color: cyan;
+  margin-top: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+  animation: fadeIn 1s ease;
+
+}
+.Dictionary h1{
+  background-color: rgba(119, 75, 139, 0.9);
+}
+@keyframes fadeIn {
+0%{
+  opacity: 0;
+  transform: translateY(-20px);
+  
+}
+100%{
+    opacity: 1;
+  transform: translateY(0px);
+}
+}
+.search-diction{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+input[type="text"]{
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+.fa-search{
+  position: absolute;
+ right: 34%;
+}
+#search-btn,#audio-button{
+  padding: 10px 20px;
+  font-size: 16px;
+   background-color: rgb(145, 26, 26);
+   color: white;
+   border: none;
+   margin-left: 10px;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+#search-btn:hover{
+  background-color: red;
+}
+#audio-button:hover{
+  background-color: red;
+}
+.result-container{
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px  rgba(0,0,0,0.9);
+  animation: slideIn 0.5s ease-in;
+}
+@keyframes slideIn {
+0%{
+  opacity: 0;
+  transform: translateY(-10px);
+  
+}
+100%{
+    opacity: 1;
+  transform: translateY(0px);
+}
+}
+.result-container.title{
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#word-description{
+  font-size: 12px;
+  margin-top: 10px;
+
+}
+/*---------We are adding this ul tag using the javascript bt we will first style it*/
+ul{
+  list-style: none;
+  padding: 0;
+
+}
+li{
+  margin-bottom: 10px;
+}
+strong{
+  font-weight: bold;
+}
+#audio-container{
+  text-align: center;
+  margin-top: 20px;
+}
+#audio-button{
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+}

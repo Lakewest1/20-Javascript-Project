@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My 20 Javascript Project</title>
+  <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+<!--------------For Stop watch Timer-=====================-->
+  <h1><span>Welcome!</span>  The 20 Javascript Projects</h1>
+  <div class="Container">
+    <h2>Stop Watch Timer</h2>
+    <div class="Stop-watch">
+      <div class="Timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+         <span>:</span>
+        <span id="milliseconds">00</span>
+      </div>
+      <div class="btn">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>    
+      </div>
+    </div>
+    <h2 class="lap-title">Lap timer</h2>
+    <ul id="lapList"><!----Lap1 : 01:45---></ul>
+  </div>
+  <br> <hr>
+<!--------------=========================For Dictionary============================================-->
+
+<div class="Dictionary">
+  <header>
+    <h1>English Dictionary</h1>
+  </header>
+  <div class="search-diction">
+    <input type="text" id="search-input" placeholder="Enter a word">
+    <i class="fa fa-search"></i>
+    <button id="search-btn">Search</button>
+  </div>
+  <div class="result-container" id="result-container">
+    <h2 class="title" id="word-title">Content</h2>
+    <div id="word-description">Content</div>
+    <div id="audio-container">
+      <button id="audio-button"><i class="fa fa-volume-up"></i></button>
+    </div>
+  </div>
+</div>
+  <script src="style.js"></script>
+</body>
+</html>
